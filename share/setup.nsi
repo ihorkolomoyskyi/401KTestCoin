@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://www.apr-coin.com
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/ubuntu/apr/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/ubuntu/apr/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/401KTestCoin/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/401KTestCoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/ubuntu/apr/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/401KTestCoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "APR Coin Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\aprcoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/ubuntu/apr/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/401KTestCoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/ubuntu/apr/aprcoin-${VERSION}-win-setup.exe
+OutFile /root/401KTestCoin/aprcoin-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\AprCoin
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/ubuntu/apr/release/aprcoin-qt
-    File /oname=COPYING.txt /home/ubuntu/apr/COPYING
-    File /oname=readme.txt /home/ubuntu/apr/doc/README_windows.txt
+    File /root/401KTestCoin/release/aprcoin-qt
+    File /oname=COPYING.txt /root/401KTestCoin/COPYING
+    File /oname=readme.txt /root/401KTestCoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/ubuntu/apr/release/aprcoind
-    File /home/ubuntu/apr/release/aprcoin-cli
+    File /root/401KTestCoin/release/aprcoind
+    File /root/401KTestCoin/release/aprcoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /home/ubuntu/apr/doc\*.*
+    File /r /root/401KTestCoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

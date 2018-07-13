@@ -30,7 +30,7 @@
 #define ENABLE_WALLET 1
 
 /* Define to 1 to enable ZMQ functions */
-#define ENABLE_ZMQ 0
+#define ENABLE_ZMQ 1
 
 /* parameter and return value type for __fdelt_chk */
 /* #undef FDELT_TYPE */
@@ -54,7 +54,7 @@
 #define HAVE_BOOST_THREAD /**/
 
 /* define if the Boost::Unit_Test_Framework library is available */
-/* #undef HAVE_BOOST_UNIT_TEST_FRAMEWORK */
+#define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
 
 /* Define this symbol if the consensus lib has been built */
 /* #undef HAVE_CONSENSUS_LIB */
@@ -293,10 +293,10 @@
 /* #undef QT_QPA_PLATFORM_WINDOWS */
 
 /* Define this symbol if the qt platform is xcb */
-#define QT_QPA_PLATFORM_XCB 1
+/* #undef QT_QPA_PLATFORM_XCB */
 
 /* Define this symbol if qt plugins are static */
-#define QT_STATICPLUGIN 1
+/* #undef QT_STATICPLUGIN */
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -308,7 +308,7 @@
 #define USE_DBUS 1
 
 /* Define if QR support should be compiled in */
-#define USE_QRCODE 1
+/* #undef USE_QRCODE */
 
 /* UPnP support not compiled if undefined, otherwise value (0 or 1) determines
    default state */

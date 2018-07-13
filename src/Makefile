@@ -96,7 +96,7 @@ am__append_2 = $(builddir)/leveldb/libleveldb.a
 am__append_3 = $(builddir)/leveldb/libmemenv.a
 am__append_4 = $(BDB_CPPFLAGS)
 am__append_5 = libbitcoin_wallet.a
-#am__append_6 = libbitcoin_zmq.a
+am__append_6 = libbitcoin_zmq.a
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5)
 TESTS = $(am__EXEEXT_6) $(am__EXEEXT_5)
@@ -104,7 +104,7 @@ am__append_7 = aprcoind
 am__append_8 = aprcoin-cli aprcoin-tx
 #am__append_9 = compat/glibc_compat.cpp \
 #	compat/glibcxx_compat.cpp
-#am__append_10 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+am__append_10 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_11 = libbitcoin_wallet.a
 #
 #am__append_12 = aprcoind-res.rc
@@ -112,29 +112,29 @@ am__append_11 = libbitcoin_wallet.a
 ##am__append_14 = compat/glibc_compat.cpp \
 ##	compat/glibcxx_compat.cpp
 ##am__append_15 = secp256k1/libsecp256k1.la
-#am__append_16 = test/test_aprcoin test/bitcoin-util-test.py
-#am__append_17 = test/test_aprcoin
-#am__append_18 = \
-#	test/bctest.py \
-#	test/bitcoin-util-test.py \
-#	test/data/bitcoin-util-test.json \
-#	test/data/blanktx.hex \
-#	test/data/tt-delin1-out.hex \
-#	test/data/tt-delout1-out.hex \
-#	test/data/tt-locktime317000-out.hex \
-#	test/data/tx394b54bb.hex \
-#	test/data/txcreate1.hex \
-#	test/data/txcreate2.hex \
-#	test/data/txcreatesign.hex
+am__append_16 = test/test_aprcoin test/bitcoin-util-test.py
+am__append_17 = test/test_aprcoin
+am__append_18 = \
+	test/bctest.py \
+	test/bitcoin-util-test.py \
+	test/data/bitcoin-util-test.json \
+	test/data/blanktx.hex \
+	test/data/tt-delin1-out.hex \
+	test/data/tt-delout1-out.hex \
+	test/data/tt-locktime317000-out.hex \
+	test/data/tx394b54bb.hex \
+	test/data/txcreate1.hex \
+	test/data/txcreate2.hex \
+	test/data/txcreatesign.hex
 
-#am__append_19 = \
-#  test/accounting_tests.cpp \
-#  test/wallet_tests.cpp \
-#  test/rpc_wallet_tests.cpp
+am__append_19 = \
+  test/accounting_tests.cpp \
+  test/wallet_tests.cpp \
+  test/rpc_wallet_tests.cpp
 
-#am__append_20 = $(LIBBITCOIN_WALLET)
-##am__append_21 = $(ZMQ_LIBS)
-#am__append_22 = $(CLEAN_BITCOIN_TEST)
+am__append_20 = $(LIBBITCOIN_WALLET)
+am__append_21 = $(ZMQ_LIBS)
+am__append_22 = $(CLEAN_BITCOIN_TEST)
 am__append_23 = qt/aprcoin-qt
 am__append_24 = qt/libbitcoinqt.a
 am__append_25 = \
@@ -173,17 +173,17 @@ am__append_25 = \
 #am__append_26 = $(BITCOIN_MM)
 #am__append_27 = $(BITCOIN_RC)
 am__append_28 = $(LIBBITCOIN_WALLET)
-#am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_30 = $(CLEAN_QT)
-#am__append_31 = qt/test/test_aprcoin-qt
-#am__append_32 = qt/test/test_aprcoin-qt
-#am__append_33 = qt/test/moc_paymentservertests.cpp
-#am__append_34 = \
-#  qt/test/paymentservertests.cpp
+am__append_31 = qt/test/test_aprcoin-qt
+am__append_32 = qt/test/test_aprcoin-qt
+am__append_33 = qt/test/moc_paymentservertests.cpp
+am__append_34 = \
+  qt/test/paymentservertests.cpp
 
-#am__append_35 = $(LIBBITCOIN_WALLET)
-##am__append_36 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
-#am__append_37 = $(CLEAN_BITCOIN_QT_TEST)
+am__append_35 = $(LIBBITCOIN_WALLET)
+am__append_36 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+am__append_37 = $(CLEAN_BITCOIN_QT_TEST)
 subdir = src
 SUBDIRS =
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -390,9 +390,9 @@ libbitcoin_zmq_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_zmq_a_LIBADD =
 am__libbitcoin_zmq_a_SOURCES_DIST = zmq/zmqabstractnotifier.cpp \
 	zmq/zmqnotificationinterface.cpp zmq/zmqpublishnotifier.cpp
-#am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
-#	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
-#	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
+am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
+	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
+	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
 libbitcoin_zmq_a_OBJECTS = $(am_libbitcoin_zmq_a_OBJECTS)
 qt_libbitcoinqt_a_AR = $(AR) $(ARFLAGS)
 qt_libbitcoinqt_a_LIBADD =
@@ -708,9 +708,9 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 am__EXEEXT_1 = aprcoind$(EXEEXT)
 am__EXEEXT_2 = aprcoin-cli$(EXEEXT) \
 	aprcoin-tx$(EXEEXT)
-#am__EXEEXT_3 = test/test_aprcoin$(EXEEXT)
+am__EXEEXT_3 = test/test_aprcoin$(EXEEXT)
 am__EXEEXT_4 = qt/aprcoin-qt$(EXEEXT)
-#am__EXEEXT_5 = qt/test/test_aprcoin-qt$(EXEEXT)
+am__EXEEXT_5 = qt/test/test_aprcoin-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 am__aprcoin_cli_SOURCES_DIST = aprcoin-cli.cpp aprcoin-cli-res.rc
 #am__objects_10 = aprcoin-cli-res.$(OBJEXT)
@@ -739,8 +739,8 @@ am_aprcoind_OBJECTS = aprcoind-aprcoind.$(OBJEXT) $(am__objects_11)
 aprcoind_OBJECTS = $(am_aprcoind_OBJECTS)
 am__DEPENDENCIES_3 = $(am__append_2)
 am__DEPENDENCIES_4 = $(am__append_3)
-#am__DEPENDENCIES_5 = $(LIBBITCOIN_ZMQ) \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_5 = $(LIBBITCOIN_ZMQ) \
+	$(am__DEPENDENCIES_1)
 aprcoind_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(am__DEPENDENCIES_2) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_4) $(LIBSECP256K1) \
@@ -766,9 +766,9 @@ am_qt_aprcoin_qt_OBJECTS =  \
 	qt/qt_aprcoin_qt-aprcoin.$(OBJEXT) \
 	$(am__objects_13) $(am__objects_15)
 qt_aprcoin_qt_OBJECTS = $(am_qt_aprcoin_qt_OBJECTS)
-#am__DEPENDENCIES_6 =  \
-#	$(LIBBITCOIN_ZMQ) \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_6 =  \
+	$(LIBBITCOIN_ZMQ) \
+	$(am__DEPENDENCIES_1)
 qt_aprcoin_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 	$(LIBBITCOIN_SERVER) $(am__append_28) \
 	$(am__DEPENDENCIES_6) $(LIBBITCOIN_CLI) \
@@ -789,41 +789,41 @@ am__qt_test_test_aprcoin_qt_SOURCES_DIST = qt/test/test_main.cpp \
 	qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-#am__objects_16 = qt/test/qt_test_test_aprcoin_qt-paymentservertests.$(OBJEXT)
-#am_qt_test_test_aprcoin_qt_OBJECTS = qt/test/qt_test_test_aprcoin_qt-test_main.$(OBJEXT) \
-#	qt/test/qt_test_test_aprcoin_qt-uritests.$(OBJEXT) \
-#	$(am__objects_1) $(am__objects_16)
-#am__objects_17 = qt/test/qt_test_test_aprcoin_qt-moc_paymentservertests.$(OBJEXT)
-#am__objects_18 = qt/test/qt_test_test_aprcoin_qt-moc_uritests.$(OBJEXT) \
-#	$(am__objects_17)
-#nodist_qt_test_test_aprcoin_qt_OBJECTS =  \
-#	$(am__objects_18)
+am__objects_16 = qt/test/qt_test_test_aprcoin_qt-paymentservertests.$(OBJEXT)
+am_qt_test_test_aprcoin_qt_OBJECTS = qt/test/qt_test_test_aprcoin_qt-test_main.$(OBJEXT) \
+	qt/test/qt_test_test_aprcoin_qt-uritests.$(OBJEXT) \
+	$(am__objects_1) $(am__objects_16)
+am__objects_17 = qt/test/qt_test_test_aprcoin_qt-moc_paymentservertests.$(OBJEXT)
+am__objects_18 = qt/test/qt_test_test_aprcoin_qt-moc_uritests.$(OBJEXT) \
+	$(am__objects_17)
+nodist_qt_test_test_aprcoin_qt_OBJECTS =  \
+	$(am__objects_18)
 qt_test_test_aprcoin_qt_OBJECTS =  \
 	$(am_qt_test_test_aprcoin_qt_OBJECTS) \
 	$(nodist_qt_test_test_aprcoin_qt_OBJECTS)
-##am__DEPENDENCIES_7 =  \
-##	$(LIBBITCOIN_ZMQ) \
-##	$(am__DEPENDENCIES_1)
-#qt_test_test_aprcoin_qt_DEPENDENCIES =  \
-#	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
-#	$(am__append_35) $(am__DEPENDENCIES_7) \
-#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-#	$(am__DEPENDENCIES_2) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_4) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_7 =  \
+	$(LIBBITCOIN_ZMQ) \
+	$(am__DEPENDENCIES_1)
+qt_test_test_aprcoin_qt_DEPENDENCIES =  \
+	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
+	$(am__append_35) $(am__DEPENDENCIES_7) \
+	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+	$(am__DEPENDENCIES_2) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_4) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1)
 qt_test_test_aprcoin_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) $(qt_test_test_aprcoin_qt_LDFLAGS) \
@@ -855,68 +855,68 @@ am__test_test_aprcoin_SOURCES_DIST = test/allocator_tests.cpp \
 	test/data/script_invalid.json test/data/tx_invalid.json \
 	test/data/tx_valid.json test/data/sighash.json \
 	test/data/alertTests.raw
-#am__objects_19 = test/test_test_aprcoin-accounting_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-wallet_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-rpc_wallet_tests.$(OBJEXT)
-#am__objects_20 = test/test_test_aprcoin-allocator_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-base32_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-base58_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-base64_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-checkblock_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-Checkpoints_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-coins_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-compress_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-crypto_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-DoS_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-getarg_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-hash_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-key_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-main_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-mempool_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-mruset_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-multisig_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-netbase_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-pmt_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-reverselock_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-rpc_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-sanity_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-scheduler_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-script_P2SH_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-script_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-scriptnum_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-serialize_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-sighash_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-sigopcount_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-skiplist_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-test_aprcoin.$(OBJEXT) \
-#	test/test_test_aprcoin-timedata_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-torcontrol_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-transaction_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-uint256_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-univalue_tests.$(OBJEXT) \
-#	test/test_test_aprcoin-util_tests.$(OBJEXT) \
-#	$(am__objects_19)
-#am_test_test_aprcoin_OBJECTS = $(am__objects_20) \
-#	$(am__objects_1) $(am__objects_1)
-#am__objects_21 = $(am__objects_1) $(am__objects_1)
-#nodist_test_test_aprcoin_OBJECTS =  \
-#	$(am__objects_21)
+am__objects_19 = test/test_test_aprcoin-accounting_tests.$(OBJEXT) \
+	test/test_test_aprcoin-wallet_tests.$(OBJEXT) \
+	test/test_test_aprcoin-rpc_wallet_tests.$(OBJEXT)
+am__objects_20 = test/test_test_aprcoin-allocator_tests.$(OBJEXT) \
+	test/test_test_aprcoin-base32_tests.$(OBJEXT) \
+	test/test_test_aprcoin-base58_tests.$(OBJEXT) \
+	test/test_test_aprcoin-base64_tests.$(OBJEXT) \
+	test/test_test_aprcoin-checkblock_tests.$(OBJEXT) \
+	test/test_test_aprcoin-Checkpoints_tests.$(OBJEXT) \
+	test/test_test_aprcoin-coins_tests.$(OBJEXT) \
+	test/test_test_aprcoin-compress_tests.$(OBJEXT) \
+	test/test_test_aprcoin-crypto_tests.$(OBJEXT) \
+	test/test_test_aprcoin-DoS_tests.$(OBJEXT) \
+	test/test_test_aprcoin-getarg_tests.$(OBJEXT) \
+	test/test_test_aprcoin-hash_tests.$(OBJEXT) \
+	test/test_test_aprcoin-key_tests.$(OBJEXT) \
+	test/test_test_aprcoin-main_tests.$(OBJEXT) \
+	test/test_test_aprcoin-mempool_tests.$(OBJEXT) \
+	test/test_test_aprcoin-mruset_tests.$(OBJEXT) \
+	test/test_test_aprcoin-multisig_tests.$(OBJEXT) \
+	test/test_test_aprcoin-netbase_tests.$(OBJEXT) \
+	test/test_test_aprcoin-pmt_tests.$(OBJEXT) \
+	test/test_test_aprcoin-reverselock_tests.$(OBJEXT) \
+	test/test_test_aprcoin-rpc_tests.$(OBJEXT) \
+	test/test_test_aprcoin-sanity_tests.$(OBJEXT) \
+	test/test_test_aprcoin-scheduler_tests.$(OBJEXT) \
+	test/test_test_aprcoin-script_P2SH_tests.$(OBJEXT) \
+	test/test_test_aprcoin-script_tests.$(OBJEXT) \
+	test/test_test_aprcoin-scriptnum_tests.$(OBJEXT) \
+	test/test_test_aprcoin-serialize_tests.$(OBJEXT) \
+	test/test_test_aprcoin-sighash_tests.$(OBJEXT) \
+	test/test_test_aprcoin-sigopcount_tests.$(OBJEXT) \
+	test/test_test_aprcoin-skiplist_tests.$(OBJEXT) \
+	test/test_test_aprcoin-test_aprcoin.$(OBJEXT) \
+	test/test_test_aprcoin-timedata_tests.$(OBJEXT) \
+	test/test_test_aprcoin-torcontrol_tests.$(OBJEXT) \
+	test/test_test_aprcoin-transaction_tests.$(OBJEXT) \
+	test/test_test_aprcoin-uint256_tests.$(OBJEXT) \
+	test/test_test_aprcoin-univalue_tests.$(OBJEXT) \
+	test/test_test_aprcoin-util_tests.$(OBJEXT) \
+	$(am__objects_19)
+am_test_test_aprcoin_OBJECTS = $(am__objects_20) \
+	$(am__objects_1) $(am__objects_1)
+am__objects_21 = $(am__objects_1) $(am__objects_1)
+nodist_test_test_aprcoin_OBJECTS =  \
+	$(am__objects_21)
 test_test_aprcoin_OBJECTS = $(am_test_test_aprcoin_OBJECTS) \
 	$(nodist_test_test_aprcoin_OBJECTS)
 #am__DEPENDENCIES_8 = libbitcoinconsensus.la
-##am__DEPENDENCIES_9 =  \
-##	$(am__DEPENDENCIES_1)
-#test_test_aprcoin_DEPENDENCIES =  \
-#	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
-#	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
-#	$(LIBBITCOIN_CRYPTO) $(am__DEPENDENCIES_2) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_4) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(LIBSECP256K1) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__append_20) \
-#	$(am__DEPENDENCIES_8) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_9)
+am__DEPENDENCIES_9 =  \
+	$(am__DEPENDENCIES_1)
+test_test_aprcoin_DEPENDENCIES =  \
+	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
+	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
+	$(LIBBITCOIN_CRYPTO) $(am__DEPENDENCIES_2) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_4) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(LIBSECP256K1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__append_20) \
+	$(am__DEPENDENCIES_8) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_9)
 test_test_aprcoin_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_aprcoin_LDFLAGS) \
@@ -1214,8 +1214,8 @@ am__set_TESTS_bases = \
   bases=`for i in $$bases; do echo $$i; done | sed 's/\.log$$//'`; \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
-#am__EXEEXT_6 = test/test_aprcoin$(EXEEXT) \
-#	test/bitcoin-util-test.py
+am__EXEEXT_6 = test/test_aprcoin$(EXEEXT) \
+	test/bitcoin-util-test.py
 TEST_SUITE_LOG = test-suite.log
 TEST_EXTENSIONS =  .test
 LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
@@ -1267,37 +1267,37 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/ubuntu/apr/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /root/401KTestCoin/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /usr/bin/x86_64-linux-gnu-ar
-AUTOCONF = ${SHELL} /home/ubuntu/apr/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/ubuntu/apr/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/ubuntu/apr/build-aux/missing automake-1.15
-AWK = gawk
+AR = /usr/bin/ar
+AUTOCONF = ${SHELL} /root/401KTestCoin/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /root/401KTestCoin/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /root/401KTestCoin/build-aux/missing automake-1.15
+AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
 BITCOIN_CLI_NAME = aprcoin-cli
 BITCOIN_DAEMON_NAME = aprcoind
 BITCOIN_GUI_NAME = aprcoin-qt
 BITCOIN_TX_NAME = aprcoin-tx
-BOOST_CHRONO_LIB = -lboost_chrono-mt
-BOOST_CPPFLAGS = -pthread -I/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../include
-BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt
-BOOST_LDFLAGS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../lib
-BOOST_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../lib -lboost_system-mt -lboost_filesystem-mt -lboost_program_options-mt -lboost_thread-mt -lboost_chrono-mt
-BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt
-BOOST_SYSTEM_LIB = -lboost_system-mt
-BOOST_THREAD_LIB = -lboost_thread-mt
-BOOST_UNIT_TEST_FRAMEWORK_LIB = 
+BOOST_CHRONO_LIB = -lboost_chrono
+BOOST_CPPFLAGS = -pthread -I/usr/include
+BOOST_FILESYSTEM_LIB = -lboost_filesystem
+BOOST_LDFLAGS = -L/usr/lib/x86_64-linux-gnu
+BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono
+BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options
+BOOST_SYSTEM_LIB = -lboost_system
+BOOST_THREAD_LIB = -lboost_thread
+BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework
 BREW = 
 BUILD_QT = qt
-BUILD_TEST = 
-BUILD_TEST_QT = 
-CC = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/ccache gcc -m64
-CCACHE = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/ccache
+BUILD_TEST = test
+BUILD_TEST_QT = test
+CC = gcc
+CCACHE = 
 CCDEPMODE = depmode=gcc3
-CFLAGS = -pipe -O2 
+CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 6
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
@@ -1305,15 +1305,15 @@ CLIENT_VERSION_MINOR = 1
 CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2018
-CPP = gcc -m64 -E
-CPPFILT = /usr/bin/x86_64-linux-gnu-c++filt
-CPPFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
-CRYPTO_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-CRYPTO_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lcrypto -ldl
-CXX = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/ccache g++ -m64 -std=c++11
-CXXCPP = g++ -m64 -std=c++11 -E
+CPP = gcc -E
+CPPFILT = /usr/bin/c++filt
+CPPFLAGS =  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
+CRYPTO_CFLAGS = 
+CRYPTO_LIBS = -lcrypto
+CXX = g++ -std=c++11
+CXXCPP = g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC -fvisibility=hidden
+CXXFLAGS = -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC -fvisibility=hidden
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -1324,13 +1324,13 @@ ECHO_C =
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-EVENT_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-EVENT_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -levent
-EVENT_PTHREADS_CFLAGS = -pthread -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-EVENT_PTHREADS_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -levent_pthreads -levent
+EVENT_CFLAGS = 
+EVENT_LIBS = -levent
+EVENT_PTHREADS_CFLAGS = -pthread
+EVENT_PTHREADS_LIBS = -levent_pthreads -levent
 EXEEXT = 
 FGREP = /bin/grep -F
-GCOV = /usr/bin/x86_64-linux-gnu-gcov
+GCOV = /usr/bin/gcov
 GENHTML = 
 GENISOIMAGE = 
 GIT = /usr/bin/git
@@ -1348,7 +1348,7 @@ JAVA =
 JAVA_COMPARISON_TOOL = 
 LCOV = 
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../lib   -Wl,-z,relro -Wl,-z,now
+LDFLAGS =   -Wl,-z,relro -Wl,-z,now
 LEVELDB_CPPFLAGS =  $(am__append_1)
 LEVELDB_TARGET_FLAGS = 
 LIBLEVELDB =  $(am__append_2)
@@ -1359,84 +1359,84 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
-LRELEASE = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/lrelease
+LRELEASE = /usr/lib/x86_64-linux-gnu/qt5/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-LUPDATE = 
+LUPDATE = /usr/lib/x86_64-linux-gnu/qt5/bin/lupdate
 MAINT = 
-MAKEINFO = ${SHELL} /home/ubuntu/apr/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /root/401KTestCoin/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/moc
+MOC = /usr/lib/x86_64-linux-gnu/qt5/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
-NM = nm
+NM = /usr/bin/nm -B
 NMEDIT = 
-OBJCOPY = /usr/bin/x86_64-linux-gnu-objcopy
-OBJCXX = g++ -m64 -std=c++11
+OBJCOPY = /usr/bin/objcopy
+OBJCXX = g++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
-OBJCXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC
-OBJDUMP = x86_64-linux-gnu-objdump
+OBJCXXFLAGS = -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC
+OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
 PACKAGE = aprcoin
-PACKAGE_BUGREPORT = www.savebitcoin.io
+PACKAGE_BUGREPORT = www.apr-coin.com
 PACKAGE_NAME = APR Coin Core
 PACKAGE_STRING = APR Coin Core 1.1.0
 PACKAGE_TARNAME = aprcoin
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.1.0
 PATH_SEPARATOR = :
-PKG_CONFIG = /usr/bin/pkg-config --static
+PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../share/pkgconfig:/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../lib/pkgconfig
+PKG_CONFIG_PATH = 
 PORT = 
-PROTOBUF_CFLAGS = -pthread -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-PROTOBUF_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lprotobuf -pthread -lpthread -lz
-PROTOC = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/protoc
-PTHREAD_CC = gcc -m64
+PROTOBUF_CFLAGS = -pthread
+PROTOBUF_LIBS = -lprotobuf -pthread -lpthread
+PROTOC = /usr/bin/protoc
+PTHREAD_CC = gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3
-PYTHONPATH = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/lib/python/dist-packages:
-QR_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-QR_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lqrencode -lpthread
-QTPLATFORM_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtPlatformSupport -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtGui -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QTPLATFORM_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5PlatformSupport -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5DBus -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lfontconfig -lfreetype -lQt5Gui -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lqtpng -lqtharfbuzzng -lz -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt
+PYTHONPATH = 
+QR_CFLAGS = 
+QR_LIBS = 
+QTPLATFORM_CFLAGS = 
+QTPLATFORM_LIBS = 
 QTPRINT_CFLAGS = 
 QTPRINT_LIBS = 
-QTXCBQPA_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtXcbQpa -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtPlatformSupport -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtGui -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QTXCBQPA_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -L//home/ubuntu/apr/depends/x86_64-linux-gnu/lib -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5XcbQpa -lX11 -lX11-xcb -lxcb -lxcb-static -lQt5PlatformSupport -lQt5DBus -lfontconfig -lfreetype -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lfontconfig -lfreetype -lQt5PlatformSupport -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5DBus -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lfontconfig -lfreetype -lQt5Gui -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lqtpng -lqtharfbuzzng -lz -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt
-QT_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtNetwork -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtWidgets -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtGui -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QT_DBUS_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtDBus -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QT_DBUS_INCLUDES = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtDBus -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QT_DBUS_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5DBus -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt
-QT_INCLUDES = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtNetwork -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtWidgets -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtGui -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
+QTXCBQPA_CFLAGS = 
+QTXCBQPA_LIBS = 
+QT_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
+QT_DBUS_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtDBus -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
+QT_DBUS_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtDBus -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
+QT_DBUS_LIBS = -lQt5DBus -lQt5Core
+QT_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
 QT_LDFLAGS = 
-QT_LIBS = -lqxcb -lxcb-static -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -L//home/ubuntu/apr/depends/x86_64-linux-gnu/lib -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5XcbQpa -lX11 -lX11-xcb -lxcb -lxcb-static -lQt5PlatformSupport -lQt5DBus -lfontconfig -lfreetype -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lfontconfig -lfreetype -lQt5PlatformSupport -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5DBus -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lfontconfig -lfreetype -lQt5Gui -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lqtpng -lqtharfbuzzng -lz -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lX11-xcb -lX11 -lpthread -lxcb -lXau -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5PlatformSupport -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5DBus -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lfontconfig -lfreetype -lQt5Gui -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lqtpng -lqtharfbuzzng -lz -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5Network -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lz -lssl -lcrypto -lQt5Widgets -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lQt5Gui -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lqtpng -lqtharfbuzzng -lz -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt -L/home/ubuntu/apr/depends/x86_64-linux-gnu/share/../plugins/platforms
+QT_LIBS = -lQt5Network -lQt5Widgets -lQt5Gui -lQt5Core
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
-QT_TEST_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtTest -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QT_TEST_INCLUDES = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtTest -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/QtCore
-QT_TEST_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lQt5Test -lQt5Core -lz -lqtpcre -lm -ldl -lrt -lpthread -lQt5Core -lpthread -lz -lqtpcre -lm -ldl -lrt
-QT_TRANSLATION_DIR = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../translations
-RANLIB = /usr/bin/x86_64-linux-gnu-ranlib
-RCC = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/rcc
-READELF = /usr/bin/x86_64-linux-gnu-readelf
+QT_TEST_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtTest -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
+QT_TEST_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtTest -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
+QT_TEST_LIBS = -lQt5Test -lQt5Core
+QT_TRANSLATION_DIR = 
+RANLIB = /usr/bin/ranlib
+RCC = /usr/lib/x86_64-linux-gnu/qt5/bin/rcc
+READELF = /usr/bin/readelf
 RELDFLAGS = -Wl,--exclude-libs,ALL
 RSVG_CONVERT = 
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-SSL_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-SSL_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lssl -lcrypto -ldl
-STRIP = /usr/bin/x86_64-linux-gnu-strip
-TESTDEFS = 
+SSL_CFLAGS = 
+SSL_LIBS = -lssl
+STRIP = /usr/bin/strip
+TESTDEFS =  -DBOOST_TEST_DYN_LINK
 TIFFCP = 
-UIC = /home/ubuntu/apr/depends/x86_64-linux-gnu/share/../native/bin/uic
+UIC = /usr/lib/x86_64-linux-gnu/qt5/bin/uic
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_QRCODE = 
@@ -1444,18 +1444,18 @@ USE_UPNP =
 VERSION = 1.1.0
 WINDOWS_BITS = 
 WINDRES = 
-X11XCB_CFLAGS = -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include/xcb-shared -I/home/ubuntu/apr/depends/x86_64-linux-gnu/include
-X11XCB_LIBS = -L/home/ubuntu/apr/depends/x86_64-linux-gnu/lib -lX11-xcb -lX11 -lpthread -lxcb -lXau
-XGETTEXT = 
+X11XCB_CFLAGS = 
+X11XCB_LIBS = 
+XGETTEXT = /usr/bin/xgettext
 ZMQ_CFLAGS = 
-ZMQ_LIBS = 
-abs_builddir = /home/ubuntu/apr/src
-abs_srcdir = /home/ubuntu/apr/src
-abs_top_builddir = /home/ubuntu/apr
-abs_top_srcdir = /home/ubuntu/apr
-ac_ct_AR = 
-ac_ct_CC = 
-ac_ct_CXX = 
+ZMQ_LIBS = -lzmq
+abs_builddir = /root/401KTestCoin/src
+abs_srcdir = /root/401KTestCoin/src
+abs_top_builddir = /root/401KTestCoin
+abs_top_srcdir = /root/401KTestCoin
+ac_ct_AR = ar
+ac_ct_CC = gcc
+ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 ac_ct_OBJCXX = 
 am__include = include
@@ -1477,14 +1477,14 @@ docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
 host = x86_64-pc-linux-gnu
-host_alias = x86_64-linux-gnu
+host_alias = 
 host_cpu = x86_64
 host_os = linux-gnu
 host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/ubuntu/apr/build-aux/install-sh
+install_sh = ${SHELL} /root/401KTestCoin/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1665,13 +1665,13 @@ libbitcoin_server_a_SOURCES = \
   validationinterface.cpp \
   $(BITCOIN_CORE_H)
 
-#LIBBITCOIN_ZMQ = libbitcoin_zmq.a
-#libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-#libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-#libbitcoin_zmq_a_SOURCES = \
-#  zmq/zmqabstractnotifier.cpp \
-#  zmq/zmqnotificationinterface.cpp \
-#  zmq/zmqpublishnotifier.cpp
+LIBBITCOIN_ZMQ = libbitcoin_zmq.a
+libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_zmq_a_SOURCES = \
+  zmq/zmqabstractnotifier.cpp \
+  zmq/zmqnotificationinterface.cpp \
+  zmq/zmqpublishnotifier.cpp
 
 
 # wallet: shared between aprcoind and aprcoin-qt, but only linked
@@ -1856,69 +1856,69 @@ CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno \
 	zmq/*.gcno $(am__append_22) $(am__append_30) $(am__append_37)
 DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb $(am__append_18)
-#TEST_SRCDIR = test
-#TEST_BINARY = test/test_aprcoin$(EXEEXT)
-#JSON_TEST_FILES = \
-#  test/data/script_valid.json \
-#  test/data/base58_keys_valid.json \
-#  test/data/sig_canonical.json \
-#  test/data/sig_noncanonical.json \
-#  test/data/base58_encode_decode.json \
-#  test/data/base58_keys_invalid.json \
-#  test/data/script_invalid.json \
-#  test/data/tx_invalid.json \
-#  test/data/tx_valid.json \
-#  test/data/sighash.json
+TEST_SRCDIR = test
+TEST_BINARY = test/test_aprcoin$(EXEEXT)
+JSON_TEST_FILES = \
+  test/data/script_valid.json \
+  test/data/base58_keys_valid.json \
+  test/data/sig_canonical.json \
+  test/data/sig_noncanonical.json \
+  test/data/base58_encode_decode.json \
+  test/data/base58_keys_invalid.json \
+  test/data/script_invalid.json \
+  test/data/tx_invalid.json \
+  test/data/tx_valid.json \
+  test/data/sighash.json
 
-#RAW_TEST_FILES = test/data/alertTests.raw
-#GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
-#BITCOIN_TESTS = test/allocator_tests.cpp \
-#	test/base32_tests.cpp test/base58_tests.cpp \
-#	test/base64_tests.cpp \
-#	test/checkblock_tests.cpp \
-#	test/Checkpoints_tests.cpp \
-#	test/coins_tests.cpp \
-#	test/compress_tests.cpp \
-#	test/crypto_tests.cpp test/DoS_tests.cpp \
-#	test/getarg_tests.cpp test/hash_tests.cpp \
-#	test/key_tests.cpp test/main_tests.cpp \
-#	test/mempool_tests.cpp \
-#	test/mruset_tests.cpp \
-#	test/multisig_tests.cpp \
-#	test/netbase_tests.cpp test/pmt_tests.cpp \
-#	test/reverselock_tests.cpp \
-#	test/rpc_tests.cpp test/sanity_tests.cpp \
-#	test/scheduler_tests.cpp \
-#	test/script_P2SH_tests.cpp \
-#	test/script_tests.cpp \
-#	test/scriptnum_tests.cpp \
-#	test/serialize_tests.cpp \
-#	test/sighash_tests.cpp \
-#	test/sigopcount_tests.cpp \
-#	test/skiplist_tests.cpp \
-#	test/test_aprcoin.cpp \
-#	test/timedata_tests.cpp \
-#	test/torcontrol_tests.cpp \
-#	test/transaction_tests.cpp \
-#	test/uint256_tests.cpp \
-#	test/univalue_tests.cpp test/util_tests.cpp \
-#	$(am__append_19)
-#test_test_aprcoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-#test_test_aprcoin_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-#test_test_aprcoin_LDADD = $(LIBBITCOIN_SERVER) \
-#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-#	$(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
-#	$(BOOST_LIBS) \
-#	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
-#	$(LIBSECP256K1) $(EVENT_LIBS) \
-#	$(EVENT_PTHREADS_LIBS) $(am__append_20) \
-#	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
-#	$(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(am__append_21)
-#test_test_aprcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
-#nodist_test_test_aprcoin_SOURCES = $(GENERATED_TEST_FILES)
-#CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
+RAW_TEST_FILES = test/data/alertTests.raw
+GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
+BITCOIN_TESTS = test/allocator_tests.cpp \
+	test/base32_tests.cpp test/base58_tests.cpp \
+	test/base64_tests.cpp \
+	test/checkblock_tests.cpp \
+	test/Checkpoints_tests.cpp \
+	test/coins_tests.cpp \
+	test/compress_tests.cpp \
+	test/crypto_tests.cpp test/DoS_tests.cpp \
+	test/getarg_tests.cpp test/hash_tests.cpp \
+	test/key_tests.cpp test/main_tests.cpp \
+	test/mempool_tests.cpp \
+	test/mruset_tests.cpp \
+	test/multisig_tests.cpp \
+	test/netbase_tests.cpp test/pmt_tests.cpp \
+	test/reverselock_tests.cpp \
+	test/rpc_tests.cpp test/sanity_tests.cpp \
+	test/scheduler_tests.cpp \
+	test/script_P2SH_tests.cpp \
+	test/script_tests.cpp \
+	test/scriptnum_tests.cpp \
+	test/serialize_tests.cpp \
+	test/sighash_tests.cpp \
+	test/sigopcount_tests.cpp \
+	test/skiplist_tests.cpp \
+	test/test_aprcoin.cpp \
+	test/timedata_tests.cpp \
+	test/torcontrol_tests.cpp \
+	test/transaction_tests.cpp \
+	test/uint256_tests.cpp \
+	test/univalue_tests.cpp test/util_tests.cpp \
+	$(am__append_19)
+test_test_aprcoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_aprcoin_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+test_test_aprcoin_LDADD = $(LIBBITCOIN_SERVER) \
+	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+	$(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+	$(BOOST_LIBS) \
+	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
+	$(LIBSECP256K1) $(EVENT_LIBS) \
+	$(EVENT_PTHREADS_LIBS) $(am__append_20) \
+	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
+	$(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(am__append_21)
+test_test_aprcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+nodist_test_test_aprcoin_SOURCES = $(GENERATED_TEST_FILES)
+CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
 # aprcoin qt core #
 QT_TS = \
@@ -2229,34 +2229,34 @@ qt_aprcoin_qt_LIBTOOLFLAGS = --tag CXX
 #locale/foo.ts -> locale/foo.qm
 QT_QM = $(QT_TS:.ts=.qm)
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
-#TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp \
-#	$(am__append_33)
-#TEST_QT_H = \
-#  qt/test/uritests.h \
-#  qt/test/paymentrequestdata.h \
-#  qt/test/paymentservertests.h
+TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp \
+	$(am__append_33)
+TEST_QT_H = \
+  qt/test/uritests.h \
+  qt/test/paymentrequestdata.h \
+  qt/test/paymentservertests.h
 
-#qt_test_test_aprcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-#  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
+qt_test_test_aprcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-#qt_test_test_aprcoin_qt_SOURCES =  \
-#	qt/test/test_main.cpp \
-#	qt/test/uritests.cpp $(TEST_QT_H) \
-#	$(am__append_34)
-#nodist_qt_test_test_aprcoin_qt_SOURCES = $(TEST_QT_MOC_CPP)
-#qt_test_test_aprcoin_qt_LDADD = $(LIBBITCOINQT) \
-#	$(LIBBITCOIN_SERVER) $(am__append_35) \
-#	$(am__append_36) $(LIBBITCOIN_CLI) \
-#	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
-#	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
-#	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) \
-#	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
-#	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
-#	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
-#	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-#qt_test_test_aprcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-#CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
+qt_test_test_aprcoin_qt_SOURCES =  \
+	qt/test/test_main.cpp \
+	qt/test/uritests.cpp $(TEST_QT_H) \
+	$(am__append_34)
+nodist_qt_test_test_aprcoin_qt_SOURCES = $(TEST_QT_MOC_CPP)
+qt_test_test_aprcoin_qt_LDADD = $(LIBBITCOINQT) \
+	$(LIBBITCOIN_SERVER) $(am__append_35) \
+	$(am__append_36) $(LIBBITCOIN_CLI) \
+	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
+	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
+	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) \
+	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
+	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
+	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_test_test_aprcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
 .SUFFIXES:
@@ -7460,7 +7460,7 @@ distdir: $(DISTFILES)
 	      || exit 1; \
 	  fi; \
 	done
-check-local:
+#check-local:
 check-am: all-am
 	$(MAKE) $(AM_MAKEFLAGS) check-TESTS check-local
 check: check-recursive
@@ -7661,35 +7661,35 @@ clean-local:
 	@test -f $(PROTOC)
 	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(abspath $(<D) $<)
 
-#$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
+$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-#aprcoin_test: $(TEST_BINARY)
+aprcoin_test: $(TEST_BINARY)
 
-#aprcoin_test_check: $(TEST_BINARY) FORCE
-#	$(MAKE) check-TESTS TESTS=$^
+aprcoin_test_check: $(TEST_BINARY) FORCE
+	$(MAKE) check-TESTS TESTS=$^
 
-#aprcoin_test_clean : FORCE
-#	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_aprcoin_OBJECTS) $(TEST_BINARY)
+aprcoin_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_aprcoin_OBJECTS) $(TEST_BINARY)
 
-#check-local:
-#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
-#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check
+check-local:
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check
 
-#%.json.h: %.json
-#	@$(MKDIR_P) $(@D)
-#	@echo "namespace json_tests{" > $@
-#	@echo "static unsigned const char $(*F)[] = {" >> $@
-#	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
-#	@echo "};};" >> $@
-#	@echo "Generated $@"
+%.json.h: %.json
+	@$(MKDIR_P) $(@D)
+	@echo "namespace json_tests{" > $@
+	@echo "static unsigned const char $(*F)[] = {" >> $@
+	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
+	@echo "};};" >> $@
+	@echo "Generated $@"
 
-#%.raw.h: %.raw
-#	@$(MKDIR_P) $(@D)
-#	@echo "namespace alert_tests{" > $@
-#	@echo "static unsigned const char $(*F)[] = {" >> $@
-#	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
-#	@echo "};};" >> $@
-#	@echo "Generated $@"
+%.raw.h: %.raw
+	@$(MKDIR_P) $(@D)
+	@echo "namespace alert_tests{" > $@
+	@echo "static unsigned const char $(*F)[] = {" >> $@
+	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
+	@echo "};};" >> $@
+	@echo "Generated $@"
 
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
@@ -7745,13 +7745,13 @@ moc_%.cpp: %.h
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-#test_aprcoin_qt : qt/test/test_aprcoin-qt$(EXEEXT)
+test_aprcoin_qt : qt/test/test_aprcoin-qt$(EXEEXT)
 
-#test_aprcoin_qt_check : qt/test/test_aprcoin-qt$(EXEEXT) FORCE
-#	$(MAKE) check-TESTS TESTS=$^
+test_aprcoin_qt_check : qt/test/test_aprcoin-qt$(EXEEXT) FORCE
+	$(MAKE) check-TESTS TESTS=$^
 
-#test_aprcoin_qt_clean: FORCE
-#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_aprcoin_qt_OBJECTS)
+test_aprcoin_qt_clean: FORCE
+	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_aprcoin_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
