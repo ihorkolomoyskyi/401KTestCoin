@@ -156,7 +156,7 @@ public:
         nMaxMoneyOut = 25000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 2;
+        nLastPOWBlock = 10;
         nModifierUpdateBlock = 1; // we use the version 2 for APR
 
         const char* pszTimestamp = "Apr Coin Stablish, create by an asian developer";
