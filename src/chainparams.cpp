@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (1, uint256("0x08dc6f8e166e7729d5b39f9d169cae4821ed2c098a505bb040fd00f934eada03"));
+    (0, uint256("0x000003ae9a3767e1a412e8ac769a4e99a7a1ca3cf2848c9e5abe1ea2fef8a2fd"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -80,6 +80,51 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     1454124731,
     0,
     100};
+
+    void CChainParams::MineNewGenesisBlock()
+     {
+        // genesis.nTime=time(null);
+        genesis.nNonce=0;
+        uint256 thash;
+        while(1)
+        {
+            thash=genesis.GetHash();
+            if (this->CheckProofOfWork(thash, genesis.nBits))
+                break;
+            if ((genesis.nNonce & 0xFF) == 0)
+            {
+                printf("nonce %08X: hash = %s\n",genesis.nNonce, thash.ToString().c_str());
+            }
+            ++genesis.nNonce;
+            if (genesis.nNonce == 0)
+            {
+                printf("NONCE WRAPPED, incrementing time\n");
+                ++genesis.nTime;
+            }
+        }
+        printf("genesis.nTime = %u;\n",genesis.nTime);
+        printf("genesis.nNonce = %u;\n",genesis.nNonce);
+        printf("assert(genesis.hashMerkleRoot == uint256(\"0x%s\"));\n",genesis.hashMerkleRoot.ToString().c_str());
+        printf("//genesis hash: 0x%s\n", genesis.GetHash().ToString().c_str());
+        exit(1);
+    };
+
+    //need a different implementation here that doesn't use error() and that doesn't use Params() since it isn't yet usable
+    bool CChainParams::CheckProofOfWork(uint256 hash, unsigned int nBits)
+    {
+        bool fNegative;
+        bool fOverflow;
+        uint256 bnTarget;
+
+        bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+        // Check proof of work matches claimed amount
+        if (hash > bnTarget)
+            return false;
+
+        return true;
+    };
+
 class CMainParams : public CChainParams
 {
 public:
@@ -130,7 +175,8 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 485611;
 
-	hashGenesisBlock = genesis.GetHash();
+        //MineNewGenesisBlock();
+	      hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000003ae9a3767e1a412e8ac769a4e99a7a1ca3cf2848c9e5abe1ea2fef8a2fd"));
         assert(genesis.hashMerkleRoot == uint256("0x8f991f41bb8c6ba2b4af9d71a23df0c4a8dfb9a8edf004069b65fa624ce2b8f1"));
 
