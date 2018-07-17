@@ -152,12 +152,12 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 30; // APR coin: 2 minutes
         nTargetSpacing = 30;  // APR coin: 2 minutes
-        nMaturity = 1;
+        nMaturity = 5;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 25000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 50;
         nModifierUpdateBlock = 1; // we use the version 2 for APR
 
         const char* pszTimestamp = "Apr Coin Stablish, create by an asian developer";
