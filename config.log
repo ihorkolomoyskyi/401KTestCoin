@@ -1103,7 +1103,7 @@ configure: failed program was:
 configure:20959: result: no
 configure:20857: checking whether pthreads work without any flags
 configure:20950: gcc -o conftest -g -O2    -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  conftest.c   >&5
-/tmp/cchDgjeL.o: In function `main':
+/tmp/ccsk7TAI.o: In function `main':
 /root/401KTestCoin/conftest.c:29: undefined reference to `pthread_create'
 /root/401KTestCoin/conftest.c:30: undefined reference to `pthread_join'
 /root/401KTestCoin/conftest.c:32: undefined reference to `__pthread_register_cancel'
@@ -1574,7 +1574,7 @@ configure:22154: checking for sys/prctl.h
 configure:22154: result: yes
 configure:22164: checking for library containing getaddrinfo_a
 configure:22195: g++ -std=c++11 -o conftest -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2   -Wl,-z,relro -Wl,-z,now conftest.cpp  >&5
-/tmp/ccZaf51U.o: In function `main':
+/tmp/cci3maa8.o: In function `main':
 /root/401KTestCoin/conftest.cpp:48: undefined reference to `getaddrinfo_a'
 collect2: error: ld returned 1 exit status
 configure:22195: $? = 1
